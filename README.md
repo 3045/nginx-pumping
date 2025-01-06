@@ -59,3 +59,7 @@ Within the events block, change worker_processes to 65535, and add the following
 multi_accept on;
 use epoll;
 ```
+and then test nginx with ``nginx -t`` and apply changes by running ``systemctl nginx reload``.
+
+#### Something broke!
+Running ``nginx -t`` will tell you what's wrong. Don't be an idiot. Understanding the error you see if there is one is important to knowing how to fix it. Also, Google is your best friend, and you can probably just use some AI tool to fix it for you. Win-win!
